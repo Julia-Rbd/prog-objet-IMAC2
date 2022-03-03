@@ -39,5 +39,11 @@ Alternatively you can just create a *build* folder at the root of this project, 
 - 2 premiers cours du level 2 lus
 
 ### 23/02/22
-- Repo déposé sur github
-- Jeu guess the number codé et fonctionnel
+- Dossier déposé sur ce repo github
+- Jeu guess the number codé et fonctionnel (attention à la place de cmake pour la compilation)
+- Début de Hangman (idées, début de code mais pas terminé)
+
+### 02/03/22
+- Création du fichier rand.hpp pour utiliser la fonction rand partout où on en a besoin
+- Hangman suite : encore quelques erreurs à régler mais la structure globale est faite
+- 3e cours du level 2 lu
