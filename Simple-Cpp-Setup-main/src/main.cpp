@@ -1,9 +1,6 @@
-#include "guess_the_number.hpp"
-#include "Hangman.hpp"
+#include "menu.hpp"
 
 int main()
 {
-    //play_guess_the_number();
-
-    play_hangman();
+    show_menu();
 }

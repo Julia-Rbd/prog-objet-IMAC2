@@ -47,3 +47,10 @@ Alternatively you can just create a *build* folder at the root of this project, 
 - Création du fichier rand.hpp pour utiliser la fonction rand partout où on en a besoin
 - Hangman suite : encore quelques erreurs à régler mais la structure globale est faite
 - 3e cours du level 2 lu
+-> correction des erreurs le 03/03 et commit à cette date
+
+### 09/03/22
+- Quiz
+- 4e cours du level 2 lu
+- Création des fichiers get_input_from_user.hpp et .cpp, et menu.hpp et .cpp
+- Menu à améliorer (mais pour l'instant il n'y a pas d'erreur)
