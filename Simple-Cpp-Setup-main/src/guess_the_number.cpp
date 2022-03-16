@@ -4,7 +4,7 @@
 
 
 void play_guess_the_number(){
-    const int number_picked = rand(0,100);
+    const int number_picked = rand2(0,100);
     int number_chosen;
 
     std::cout << " I picked a number between 0 and 100" << std::endl;

@@ -1,6 +1,7 @@
 #include "menu.hpp"
+#include "Hangman.hpp"
 
 int main()
 {
-    show_menu();
+    play_hangman();
 }

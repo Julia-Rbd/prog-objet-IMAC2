@@ -54,3 +54,7 @@ Alternatively you can just create a *build* folder at the root of this project, 
 - 4e cours du level 2 lu
 - Création des fichiers get_input_from_user.hpp et .cpp, et menu.hpp et .cpp
 - Menu à améliorer (mais pour l'instant il n'y a pas d'erreur)
+
+### 16/03/22
+- Quelques améliorations sur Hangman.cpp et corrections d'erreurs sur l'ensemble du code
+- 5e cours du level 2 lu

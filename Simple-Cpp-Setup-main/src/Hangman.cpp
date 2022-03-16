@@ -1,8 +1,10 @@
 #include "Hangman.hpp"
-#include "rand.hpp"
+//#include "rand.hpp"
 #include <iostream>
 #include <array>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 
 class WordWithMissingLetters {
@@ -19,18 +21,21 @@ class WordWithMissingLetters {
 
         void show_word_currently_sought(){
             for(int i=0 ; i<_word.size() ; i++){
-                if(_letters_guessed[i])
+                if(_letters_guessed[i]){
                     std::cout << _word[i];
-                else
+                }
+                else{
                     std::cout << "_";
+                }
             }
             std::cout << "\n";
         }
 
         bool word_is_found(){       //vector of booleans
-            std::all_of(_letters_guessed.begin(), _letters_guessed.end(), [](bool _letter_guessed) {
-                 return _letter_guessed;
+            const bool result = std::all_of(_letters_guessed.begin(), _letters_guessed.end(), [](bool _letter_guessed) {
+               return _letter_guessed;
             });
+            return result;
         }
 
         bool this_letter_is_in_the_word(char letter){
@@ -55,7 +60,8 @@ WordWithMissingLetters choose_a_word_to_guess(){
         "school",
     };
 
-    return words[rand(0, words.size() - 1)];
+    return words[0];
+    //return words[rand2(0, static_cast<int>(words.size()) - 1)];
 }
 
 char get_letter(){
@@ -65,10 +71,12 @@ char get_letter(){
 }
 
 void show_number_of_lives(int nb_lives){
-    if(nb_lives > 1)
+    if(nb_lives > 1){
         std::cout << "You have " << nb_lives << " lives. \n";
-    else if (nb_lives == 1)
+    }
+    else if (nb_lives == 1){
         std::cout << "You have only one life left !! \n";
+    }
 }
 
 void play_hangman(){
@@ -99,9 +107,10 @@ void play_hangman(){
 
     }
 
-    if(word_to_guess.word_is_found())
+    if(word_to_guess.word_is_found()){
         std::cout << "Congrats, you won !" << std::endl;
-
-    else
+    }
+    else{
         std::cout << "You lose..." << std::endl;
+    }
 }
