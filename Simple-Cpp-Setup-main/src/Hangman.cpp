@@ -31,7 +31,7 @@ class WordWithMissingLetters {
             std::cout << "\n";
         }
 
-        bool word_is_found(){       //vector of booleans
+        bool word_is_found() const{       //vector of booleans
             const bool result = std::all_of(_letters_guessed.begin(), _letters_guessed.end(), [](bool _letter_guessed) {
                return _letter_guessed;
             });
