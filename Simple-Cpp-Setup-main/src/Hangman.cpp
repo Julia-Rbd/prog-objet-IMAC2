@@ -1,5 +1,5 @@
 #include "Hangman.hpp"
-//#include "rand.hpp"
+#include "rand.hpp"
 #include <iostream>
 #include <array>
 #include <string>
@@ -15,8 +15,9 @@ class WordWithMissingLetters {
         {}
 
         void change_this_letter_as_guessed(char guessed_letter){
-                size_t place = _word.find(guessed_letter);
-                _letters_guessed[place] = true;
+            //for now, if there is a double letter, the first is the only one guessed (ex: in chocolate, if you say c, only the first c will be marked as guessed)
+            size_t place = _word.find(guessed_letter);
+            _letters_guessed[place] = true;
         }
 
         void show_word_currently_sought(){
@@ -60,8 +61,7 @@ WordWithMissingLetters choose_a_word_to_guess(){
         "school",
     };
 
-    return words[0];
-    //return words[rand2(0, static_cast<int>(words.size()) - 1)];
+    return words[random(0, static_cast<int>(words.size()) - 1)];
 }
 
 char get_letter(){
@@ -93,16 +93,12 @@ void play_hangman(){
         if(word_to_guess.this_letter_is_in_the_word(guessed_letter)){
             std::cout << "Correct ! \n";
             word_to_guess.change_this_letter_as_guessed(guessed_letter);
-            word_to_guess.show_word_currently_sought();
-            show_number_of_lives(nb_lives);
         }
 
         //the letter is not in the word
         else{
             std::cout << "The letter is not in the word. \n";
-            word_to_guess.show_word_currently_sought();
             nb_lives --;
-            show_number_of_lives(nb_lives);
         }
 
     }
