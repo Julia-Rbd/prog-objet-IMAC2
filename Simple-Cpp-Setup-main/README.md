@@ -62,4 +62,5 @@ Alternatively you can just create a *build* folder at the root of this project, 
 ### 23/03/22
 - Hier : ajout de commentaires + const pour la méthode word_is_found()
 - Modification Hangman car les messages dans le terminal se répétaient
-- 
+- Correction de la fonction random()
+- 6e et 7e cours du level 2 lus
