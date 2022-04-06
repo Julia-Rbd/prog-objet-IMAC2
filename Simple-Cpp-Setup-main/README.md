@@ -64,3 +64,7 @@ Alternatively you can just create a *build* folder at the root of this project, 
 - Modification Hangman car les messages dans le terminal se répétaient
 - Correction de la fonction random()
 - 6e et 7e cours du level 2 lus
+
+### 06/04/22
+- Derniers cours du level 2 lus
+- 

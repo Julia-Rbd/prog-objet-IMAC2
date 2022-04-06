@@ -15,7 +15,9 @@ class WordWithMissingLetters {
         {}
 
         void change_this_letter_as_guessed(char guessed_letter){
-            //for now, if there is a double letter, the first is the only one guessed (ex: in chocolate, if you say c, only the first c will be marked as guessed)
+            /*for now, if there is a double letter, the first is the only one guessed
+            (ex: in chocolate, if you say c, only the first c will be marked as guessed
+            and if you enter c again, the second is not marked as guessed.)*/
             size_t place = _word.find(guessed_letter);
             _letters_guessed[place] = true;
         }
