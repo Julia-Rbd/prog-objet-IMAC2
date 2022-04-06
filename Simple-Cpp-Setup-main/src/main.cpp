@@ -2,5 +2,5 @@
 
 int main()
 {
-    play_hangman();
+    show_menu();
 }

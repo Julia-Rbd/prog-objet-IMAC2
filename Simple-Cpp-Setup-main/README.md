@@ -67,4 +67,4 @@ Alternatively you can just create a *build* folder at the root of this project, 
 
 ### 06/04/22
 - Derniers cours du level 2 lus
-- 
+- Modification du menu (pas d'erreur mais ne fonctionne pas encore)

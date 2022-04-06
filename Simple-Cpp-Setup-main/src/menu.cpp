@@ -34,11 +34,18 @@ void show_menu(){
         if(command == 'q'){
             quit = true;
         }
-        /*if(std::find(games.begin(), games.end(), command) != games.end()){
+        /*
+        else{
+            games[command].play;
+        }*/
+        
+        /*        
+        if(std::find(games.begin(), games.end(), command) != games.end()){
             games[command].play;
         }
+
         else{
             std::cout << "This command is not valid !" << std::endl;
-        }*/
+        }*/    
     }
 }
