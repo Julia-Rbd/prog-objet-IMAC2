@@ -38,7 +38,7 @@ void show_menu(){
         else{
             games[command].play;
         }*/
-        
+
         /*        
         if(std::find(games.begin(), games.end(), command) != games.end()){
             games[command].play;

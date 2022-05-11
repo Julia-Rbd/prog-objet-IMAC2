@@ -68,3 +68,9 @@ Alternatively you can just create a *build* folder at the root of this project, 
 ### 06/04/22
 - Derniers cours du level 2 lus
 - Modification du menu (pas d'erreur mais ne fonctionne pas encore)
+
+### 13/04/22
+- Submodule p6 : premiers essais, lecture, etc.
+
+### 11/05/22
+- Continuer sur le morpion avec p6
