@@ -74,3 +74,7 @@ Alternatively you can just create a *build* folder at the root of this project, 
 
 ### 11/05/22
 - Continuer sur le morpion avec p6
+
+### 06/06/22
+- Depuis la dernière fois : tous les chapitres du level 3 lus.
+- Ajout de la fin du morpion (fonctionnel)
